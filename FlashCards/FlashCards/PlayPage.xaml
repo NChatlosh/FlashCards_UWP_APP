@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="FlashCards.PlayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlashCards"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="LightGreen"/>
+            <Setter Property="MinWidth" Value="100" />
+            <Setter Property="MinHeight" Value="40" />
+        </Style>
+    </Page.Resources>
+    <Grid Background="AliceBlue">
+        <RelativePanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock x:Name="Title" Text="Digi-Cards" FontSize="48" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#006b72" FontWeight="ExtraBold"/>
+            <TextBlock x:Name="Points" Text="Points: " RelativePanel.Below="Title" RelativePanel.AlignHorizontalCenterWithPanel="True" FontSize="20" FontWeight="Bold" Foreground="Blue"/>
+            <Grid x:Name="PlayGrid" RelativePanel.Below="Points" VerticalAlignment="Center" HorizontalAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+                
+            </Grid>
+            <TextBlock x:Name="Response" Text="Correct!" RelativePanel.Below="PlayGrid" VerticalAlignment="Bottom"
+                       HorizontalAlignment="Center" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,30" FontSize="16" FontWeight="Bold" Foreground="Blue"/>
+            <StackPanel x:Name="ButtonPanel" RelativePanel.Below="Response" RelativePanel.AlignHorizontalCenterWithPanel="True">
+                <Button x:Name="Enter" Content="Enter" Margin="0, 5"/>
+                <Button x:Name="Next" Content="Next Card" Margin="0, 5"/>
+            </StackPanel>
+        </RelativePanel>
+    </Grid>
+</Page>
