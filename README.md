@@ -1,0 +1,2 @@
+# FlashCards_UWP_APP
+This was one of my final projects last year for an OOP class. It is a simple UWP app that you can sue to create digital flash cards of three varieties: multiple choice, matching, and fill in the blank. You can save a grouping of cards into a set and save it to a JSON file. The app handles the serialization/deserialization of the JSON files. I'd like to add in the future a new image card type.
